@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Togola'S Empire Home Page</title>
+	<!--========================================================================================-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--========================================================================================-->
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<!--========================================================================================-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<!--========================================================================================-->
+	<link href="lightbox.min.css" rel="stylesheet" />
+	<!--========================================================================================-->
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<!--========================================================================================-->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+	<!--========================================================================================-->
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script src="jquery.counterup.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+		<script>
+			jQuery(document).ready(function( $ ){
+				$('.countr').counterUp({
+    			delay: 10,
+    			time: 2000
+				});
+			});
+		</script>
+
+</head>
+<body>
+	<div class="wrapper">
+		<div class="top-bar">
+			<div class="logo">
+				<img src="Image/logo.jpg">
+			</div>
+		<div class="menu-wrapper">
+			<ul>
+
+				<li><a href="#about"> Qui sommes-Nous? </a></li>
+				<li><a href="#service"> Nos Services </a></li>
+				<li><a href="#gallery"> Gallery </a> </li>
+				<li><a href="#contact"> Contactez-nous </a></li>
+			</ul>
+		</div>	
+		</div>
+
+
+		<div class="hero">
+			<div class="hero-left-col">
+				<div class="hero-text">
+					<span class="square"></span><br>
+					<span class="line-1"></span>
+					<h1>Welcome!!</h1>
+					<h2>Aw'Bissimilah</h2><br>
+					<span class="square2"></span>
+					<p>TOGOLA’S EMPIRE met à votre service son savoir-faire et son expérience afin de réaliser tous types de Service d’assistance a l’étranger.</p>
+					
+					<div class="start-button">
+					<a href="#SignUp"><input type="submit" name="" value="Consultation"></a>
+					</div>
+				</div>
+			</div>
+			<div class="hero-right-col">
+				<div class="hero-banner">
+					<img src="Image/heroImage.jpg">
+				</div>
+			</div>
+
+		</div>
+
+		<div class="menu-toggle">
+				<span onclick="openNav()"><i class="fa fa-align-right"></i></span>
+		</div>
+		<div id="myNav" class="overlay">
+  			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<div class = "overlay-content">
+				<ul>
+					<li><a href="#about">Qui Sommes-Nous ?</a></li>
+					<li><a href="#service">Nos Services</a></li>
+					<li><a href="#blog">Blog</a></li>
+					<li><a href="#contact">Contactez Nous</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="circle"></div>
+		
+	</div>
+
+	<div class="aboutPage" id="about">
+		<div class="about-left-col">
+			<span class="square"></span><br>
+			<span class="line-1"></span>
+			<div class="about-banner">
+				<img src="Image/pic1.jpg">
+			</div>
+		</div>
+		<div class="about-right-col">
+			<div class="about-text">
+				<h1>Qui Sommes-Nous?</h1>
+				<span class="square3"></span>
+				<p>TOGOLA'S EMPIRE met à votre service son savoir-faire et son expérience afin de réaliser tous les types de Service d'assistance à l'étranger.</p>
+				<p>TOGOLA'S EMPIRE est votre prestataire privilégie pour faciliter votre voyage et votre intégration à l'étranger.</p>
+				<span class="square3"></span><br>
+				<button class="aboutBtn"> En savoir plus <i class="fa fa-arrow-right"></i></button><br>
+				<span class="line-2"></span>
+			</div>
+		</div>
+
+		</div>
+		<div  class= "counter-row" id="counter">
+			<div class="counter-col">
+				<h1 class="countr">309</h1>
+				<h4>Eleve Accompagne</h4>
+			</div>
+			<div class="counter-col">
+				<h1 class="countr">356</h1>
+				<h4>Eleve Inscris</h4>
+			</div>
+			<div class="counter-col">
+				<h1 class="countr">210</h1>
+				<h4>Bourse Recu</h4>
+			</div>
+		</div>
+
+	<div class="servicePage" id="service">
+		<h3>Nos Services</h3>
+		<span class="square2"></span><br>
+		<span class="line-1"></span>
+		<div class="container-service" id="slider">
+			<div class="service-row">
+				<div class="service-col">
+					<h2 class="firstH2">Assistance pour le transfert d'argent</h2>
+					<div class="caption">
+						<p>Envoyer et recevez votre argent de façon rapide, sécurise et avec un meilleur taux d'échange.</p>
+						<button type="submit" class="firstBtn">En savoir plus</button>
+					</div>
+					<img src="Image/undraw_transfer_money_rywa.png">
+				</div>
+
+				<div class="service-col">
+					<h2 class="secondH2">Orientation Academique</h2>
+					<div class="caption">
+						<p>Assistance pour le choix des filières selon les marchés d'emplois de votre pays</p>
+						<p>Services d'assistance pour les processus d'inscription dans les écoles de langue et Universités accréditées</p>
+						<button type="submit" class="secondBtn">En savoir plus</button>
+					</div>
+					<img src="Image/undraw_education_f8ru.png">
+				</div>
+
+				<div class="service-col">
+					<h2 class="thirdH2">Assistance pour votre hebergements</h2>
+					<div class="caption">
+						<p>Service d'assistance pour vos hébergements. Service d'accueil, d'orientation et d'accompagnement depuis l'aéroport et/ou la gare de transport.</p>
+						<p>Conseil pratiques sur la vie de nos pays partenaires (Ghana, Turquie, Maroc, Algerie, Inde, Malte, Angleterre, Canada, USA</p>
+						<button type="submit" class="thirdBtn">En savoir plus</button>
+					</div>
+					<img src="Image/undraw_select_house_qbag.png">
+				</div>
+			</div>	
+		</div>
+	</div>
+
+
+
+	<div class="galleryPage" id="gallery">
+		<span class="square2"></span><br>
+		<span class="line-1"></span>
+		<div class="blog-header">
+			<h5>Read</h5>
+			<h3>Gallery</h3>
+			<span class="line-1"></span><br>
+			<span class="square3"></span>
+		</div>
+		<h1>Gallerie Photo</h1>
+		<div class="btn-container">
+
+			<a href="#gallery" data-filter = "all" class="gallery-btn active">Afficher Tout</a>
+			<a href="#gallery" data-filter = "capecoast" class="gallery-btn">Cape Coast</a>
+			<a href="#gallery" data-filter = "accra" class="gallery-btn">Visite d'Accra</a>
+			<a href="#gallery" data-filter = "partenaire" class="gallery-btn">Partenaire</a>
+		</div>
+		<div class="blog-row">
+			<div class="blog-col capecoast">
+				<a href="Image/capeCoast1.jpg" data-lightbox="portfolio"><img src="Image/capeCoast1.jpg"></a>
+			</div>
+			<div class="blog-col capecoast">
+				<a href="Image/capeCoast7.jpg" data-lightbox="portfolio"><img src="Image/capeCoast7.jpg"></a>
+			</div>
+			<div class="blog-col capecoast">
+				<a href="Image/capeCoast12.jpg" data-lightbox="portfolio"><img src="Image/capeCoast12.jpg"></a>
+			</div>
+			<div class="blog-col accra">
+				<a href="Image/blog-1.jpg" data-lightbox="portfolio"><img src="Image/blog-1.jpg"></a>
+			</div>
+			<div class="blog-col accra">
+				<a href="Image/sortie1.jpg" data-lightbox="portfolio"><img src="Image/sortie1.jpg"></a>
+			</div>
+			<div class="blog-col accra">
+				<a href="Image/sortie4.jpg" data-lightbox="portfolio"><img src="Image/sortie4.jpg"></a>
+			</div>
+			<div class="blog-col partenaire">
+				<a href="Image/blog-6.jpg" data-lightbox="portfolio"><img src="Image/blog-6.jpg"></a>
+			</div>
+			<div class="blog-col partenaire">
+				<a href="Image/blog-7.jpeg" data-lightbox="portfolio"><img src="Image/blog-7.jpeg"></a>
+			</div>
+			<div class="blog-col partenaire">
+				<a href="Image/blog-9.jpg" data-lightbox="portfolio"><img src="Image/blog-9.jpg"></a>
+			</div>
+			
+		</div>
+	</div>
+	<div class="contactPage" id="contact">
+		<span class="line-1"></span><br>
+		<span class="square"></span>
+		<h5>Nous Contactez !!</h5>
+		<h3>Contact</h3>
+		<span class="line-1"></span><br>
+		<span class="square2"></span>
+		<div class="contact-row">
+			<div class="contact-left-col">
+				<div class="contact-text">
+					<p>Nous voulons répondre à toutes vos questions. Contactez-nous et nous vous répondrons dès que possible.</p>
+				
+					<div class="contact-icons">
+						<span><i class="fa fa-map-marker"></i>Halles de Bamako, en face d'Ecobank</span><br>
+						<span><i class="fa fa-phone"></i>Mali: +223 77741104/ +223 79192646/ <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+223 73110562</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Ghana: +233 0542777748/ +233 0248334283</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Cote D'Ivoire: +225 87872004</span><br>
+						<span><i class="fa fa-envelope"></i>info@togolasempire.com</span>
+					</div>
+				</div>
+			</div>
+			<div class="contact-right-col">
+				<form>
+					<input type="text" placeholder="Nom">
+					<input type="email" placeholder="example@email.com">
+					<input type="text" placeholder="Sujet">
+					<textarea rows="10" cols="50" placeholder="Message"></textarea>
+					<button class="contact-btn"> Envoyer</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="footerPage" id="footer">
+		<div class="footer-row">
+			<div class="copyright">
+    		<p><small>&copy; Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <br><a href="#" style="text-decoration: none; color: #fff;"> togolasempire.com</a></span>	</small></p>
+    	</div>
+		</div>
+	</div>
+
+
+
+
+
+
+	<!--========================================================================================-->
+<script type="text/javascript" src="index.js"></script>
+<!--========================================================================================-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!--========================================================================================-->
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<!--========================================================================================-->
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+<!--========================================================================================-->
+
+		<script>
+			var scroll = new SmoothScroll('a[href*="#"]',
+				{
+					speed: 1000,
+					speedAsDuration: true
+				});
+		</script>
+<!--========================================================================================-->
+<script src="lightbox-plus-jquery.min.js"></script>
+<!--========================================================================================-->
+<script>
+	$(document).ready(function(){
+		$(".gallery-btn").click(function(){
+			var name = $(this).attr("data-filter");
+			if (name == "all") {
+				$(".blog-col").show("2000");
+
+			}
+			else{
+				$(".blog-col").not("."+name).hide("2000");
+				$(".blog-col").filter("."+name).show("2000");
+			}
+		});
+
+		$(".btn-container a").click(function(){
+			$(this).addClass("active").siblings().removeClass("active");
+		});
+	});
+</script>
+<!--========================================================================================-->
+</body>
+</html>

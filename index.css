@@ -1,0 +1,785 @@
+/*------------------------------------------------------------------
+Project:  Togola's Empire Website
+Version:  
+Last change:  
+Assigned to:  Zeinabou Bagayoko
+Primary use:  Company
+-------------------------------------------------------------------*/
+
+
+
+
+
+
+*
+{
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+
+}
+body{
+	width: 100%;
+	height: 100%;
+}
+.wrapper, .servicePage, .blogPage, .contactPage{
+	max-height: 100vh;
+}
+
+/*==============================================================================
+[Styling the Navigation bar with the Logo]
+/*==============================================================================*/
+.top-bar
+{
+	width: 80%;
+	height: 5vh;
+	margin: 20px auto;
+}
+.logo
+{
+	width: 10%;
+	position: absolute;
+	top: 0;
+	left: 5%;
+
+}
+.logo img
+{
+	width: 100px;
+	margin-top: 20px;
+	
+}
+.menu-wrapper
+{
+	width: 80%;
+	float: left;
+	text-align: center;
+	padding: 20px;
+
+}
+.menu-wrapper ul li 
+{
+display: inline-block;
+list-style: none;
+text-decoration: none;
+color: #262363;
+cursor: pointer;
+margin-left: 30px;
+}
+.menu-wrapper ul li a{
+	text-decoration: none;
+	color: #262363;
+	font-weight: bold;
+	margin: 20px 20px;
+}
+.menu-wrapper ul li a:hover{
+	color: #000;
+	border-bottom: 2px solid #000;
+}
+/*==============================================================================
+[Styling the home page]
+/*==============================================================================*/
+.hero{
+	padding: 20px 0;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.hero-left-col{
+	flex-basis: 50%;
+}
+.hero-right-col{
+	flex-basis: 50%;
+}
+.hero-text{
+	max-width: 500px;
+	display: inline-block;
+	margin-left: 200px;
+}
+.hero-text h1{
+	margin: 15px 0;
+}
+.square{
+	width: 15px;
+	height: 15px;
+	border: 1px solid #262363;
+	display: inline-block;
+
+}
+.line-1{
+	width: 180px;
+	height: 2px;
+	background: #262363;
+	display: inline-block;
+}
+
+.square2{
+	width: 15px;
+	height: 15px;
+	background: #262363;
+	display: inline-block;
+}
+
+.hero-text .start-button input{
+	border: none;
+	border-radius: 10px;
+  	padding: 18px 40px;
+  	cursor: pointer;
+  	margin: 20px 0;
+  	outline: none;
+  	background-color: #262363;
+	color: #FFFFFF;
+	font-size: 20px;
+}
+.hero-banner{
+	width: 100%;
+	text-align: center;
+}
+.hero-banner img{
+	width: 80%;
+	margin: 20px;
+}
+
+/*==============================================================================
+[Styling the side nav bar]
+==============================================================================*/
+.menu-toggle{
+	width: 150px;
+	height: 200px;
+	right: 0;
+	top: -80px;
+	position: fixed;
+	background-image: linear-gradient(#262363,#9ea4fa);
+	border-radius: 0 0 60px 240px;
+}
+
+.overlay {
+    height: 100vh;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: rgba(255,255,255, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 50%;
+    right: 0;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 10px;
+    margin: auto;
+    width: 250px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #262363;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: black;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+.menu-toggle .fa{
+	font-size: 25px;
+	color: #ffff;
+	bottom: 60px;
+	right: 70px;
+	cursor: pointer;
+	position: absolute;
+}
+
+/*==============================================================================
+[Styling the corner circles]
+==============================================================================*/
+.circle{
+	width: 150px;
+	height: 150px;
+	left: 0;
+	top: 420px;
+	border-top-right-radius: 200px 350px;
+	border-bottom-right-radius: 50px 80px;
+	position: absolute;
+	background-image: linear-gradient(#262363,#9ea4fa);
+}
+
+/*==============================================================================
+[Styling the about Page]
+==============================================================================*/
+
+#about{
+	padding: 100px 0;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.about-left-col{
+	flex-basis: 50%;
+}
+.about-left-col .square, .line-1{
+	margin-left: 20px;
+}
+.about-right-col{
+	flex-basis: 50%;
+	text-align: right;
+}
+.about-text {
+	max-width: 500px;
+	margin-right: 150px;
+	display: inline-block;
+}
+
+.about-text h1{
+	margin: 20px;
+}
+.about-text p{
+	margin: 10px;
+	
+}
+.about-text .aboutBtn {
+	border: 1px solid #262363;
+	border-radius: 10px;
+  	padding: 18px 30px;
+  	cursor: pointer;
+  	margin: 20px 0;
+  	background-color: transparent;
+	color: #000;
+	width: 40%;
+	text-align: center;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.aboutBtn .fa{
+	color: #262363;
+}
+.about-banner{
+	width: 100%;
+	text-align: center;
+
+}
+.about-banner img{
+	width: 50%;
+	border-radius: 20px;
+	margin: 80px;
+}
+.line-2{
+	width: 2px;
+	height: 190px;
+	background: #262363;
+	display: inline-block;
+	position: absolute;
+	top: 150%;
+	right: 10%;
+}
+
+.square3{
+	width: 15px;
+	height: 15px;
+	background: #262363;
+	display: inline-block;
+}
+
+/*---Counter Area*/
+
+.counter-row{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	background: #262363;
+	height: 30vh;
+}
+.counter-col{
+	flex-basis: 25%;
+	text-align: center;
+	margin-left: 50px;
+	color: #fff;
+}
+
+/*==============================================================================
+[Styling the service Page]
+==============================================================================*/
+
+#service{
+	padding: 100px 0;
+}
+.servicePage h3{
+	margin-left: 15px;
+	margin-bottom: 10px;
+
+}
+.servicePage .square2{
+	margin-left: 15px;
+}
+.service-row{
+	width: 1000px;
+	height: 400px;
+	margin: 120px auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+.service-col{
+	height: 100%;
+	flex: 1;
+	color: #000;
+	box-sizing: border-box;
+	padding: 25px;
+	position: relative;
+	transition: 1s;
+
+}
+.service-col img{
+	width: 200px;
+	height: 250px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+.service-col .firstH2{
+	color: #18A3FF;
+
+}
+.service-col .secondH2{
+
+	color: #FF6363;
+	
+}
+.service-col .thirdH2{
+	color:  #F6C339;
+	
+}
+.service-col:hover{
+	flex-grow: 2.5;
+}
+.service-col:hover .caption{
+	display: block;
+}
+.service-col h2{
+	text-align: center;
+	font-size: 22px;
+	font-weight: 600;
+}
+
+.service-col:hover h2{
+	text-align: left;
+}
+
+.caption{
+	max-width: 230px;
+	font-size: 12px;
+	margin: 28px 0;
+	display: none;
+
+}
+
+.caption .firstBtn{
+	border: 1px solid #18A3FF;
+	background: transparent;
+	outline: none;
+	padding: 8px;
+	color: #18A3FF;
+	border-radius: 30px;
+	margin-top: 20px;
+	cursor: pointer;
+	font-size: 12px;
+
+}
+.caption .secondBtn{
+	border: 1px solid #FF6363;
+	background: transparent;
+	outline: none;
+	padding: 8px;
+	color: #FF6363;
+	border-radius: 30px;
+	margin-top: 20px;
+	cursor: pointer;
+	font-size: 12px;
+
+}
+.caption .thirdBtn{
+	border: 1px solid #F6C339;
+	background: transparent;
+	outline: none;
+	padding: 8px;
+	color: #F6C339;
+	border-radius: 30px;
+	margin-top: 20px;
+	cursor: pointer;
+	font-size: 12px;
+
+}
+
+
+/*==============================================================================
+[Styling the blog Page]
+==============================================================================*/
+
+#gallery{
+	padding: 100px 0;	
+}
+.galleryPage .square2{
+	margin-left: 15px;
+}
+.blog-header{
+	text-align: right;
+	margin-right: 50px;
+}
+.blog-header h5{
+	color: #777;
+	margin: 15px;
+}
+.galleryPage h1{
+	margin-bottom: 20px;
+	text-align: center;
+	font-weight: 400;
+
+}
+.blog-row{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-left: 60px;
+}
+.blog-col{
+	flex-basis: 25%;
+	max-height: 500px;
+	text-align: center;
+	margin: 10px;
+	
+}
+.blog-col img{
+	width: 350px;
+	height: 250px;
+	padding: 5px;
+	margin: 5px;
+	border-radius: 20px;
+}
+.blog-col img:hover{
+	background: rgba(0,0,0,0.3);
+	transform: scale(1.1);
+	transition: 1s;
+}
+.blog-col p{
+	color: #777;
+	text-align: left;
+	margin-left: 10px;
+}
+.blog-text h3{
+	margin: 20px;
+
+} 
+.btn-container{
+	margin-left: 50px;
+}
+.gallery-btn{
+	padding: 10px;
+	margin: 20px;
+	border-radius: 30px;
+	border: none;
+	background: transparent;
+	font-size: 15px;
+	cursor: pointer;
+	text-decoration: none;
+	color: black;
+}
+.active{
+	background: #e0aa19;
+	color: white;
+}
+
+.gallery-btn:hover{
+	background: #e0aa19;
+	color: white;
+}
+
+/*==============================================================================
+[Styling the contact Page]
+==============================================================================*/
+#contact{
+	padding: 100px 0;
+}
+.contactPage .square, .square2{
+	margin-left: 15px;
+	margin-top: 10px;
+}
+.contactPage h5{
+	color: #777;
+	margin: 15px;
+}
+.contactPage h3{
+
+	margin-left: 15px;
+}
+.contact-row{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.contact-left-col, .contact-right-col{
+	flex-basis: 50%;
+}
+
+.contact-text {
+	max-width: 500px;
+	margin-left: 50px;
+	line-height: 30px;
+	display: inline-block;
+}
+form{
+	max-width: 350px;
+	margin: 30px 15px;
+}
+form input, textarea{
+	width: 100%;
+	padding: 12px 10px;
+	margin-bottom: 10px;
+	outline: none;
+	box-shadow: none;
+	box-sizing: border-box;
+	border: 1px solid #777;
+	border-radius: 15px;
+}
+.contact-btn{
+	padding: 18px 40px;
+	background: #262363;
+	outline: none;
+	border: none;
+	border-radius: 20px;
+	font-weight: bold;
+	cursor: pointer;
+	color: #fff;
+}
+.contact-icons{
+	margin-top: 15px;
+	padding: 20px;
+	
+}
+.contact-icons .fa{
+	margin: 20px;
+	font-size: 30px;
+	color: #262363;
+}
+
+/*==============================================================================
+[Styling the footer Page]
+==============================================================================*/
+
+.footer-row{
+	background: #262363;
+	color: #fff;
+	width: 100%;
+	height: 15vh;
+	position: relative;
+	bottom: -10vh;
+}
+.copyright{
+	text-align: center;
+	font-size: 20px;
+	position: relative;
+	top: 20px;
+}
+
+/*==============================================================================
+[Resposiveness]
+==============================================================================*/
+@media(max-width: 700px){
+
+.logo img
+{
+	width: 70px;
+	margin-top: 15px;
+	
+}
+.menu-wrapper
+{
+	display: none;
+}
+.hero{
+	padding: 20px 0;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.hero-left-col{
+	flex-basis: 100%;
+}
+.hero-right-col{
+	flex-basis: 100%;
+}
+.hero-text{
+	max-width: 300px;
+	display: inline-block;
+	margin-left: 50px;
+}
+.square2{
+	position: relative;
+	bottom: 20px;
+}
+.circle{
+	display: none;
+}
+
+#about{
+	padding: 100px 0;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.about-left-col{
+	flex-basis: 100%;
+}
+.about-left-col .square, .line-1{
+	margin-left: 8px;
+}
+.about-right-col{
+	flex-basis: 100%;
+	text-align: right;
+}
+.about-text {
+	max-width: 300px;
+	margin-right: 50px;
+	display: inline-block;
+}
+.about-text .aboutBtn {
+	border: 1px solid #262363;
+	border-radius: 10px;
+  	padding: 9px 15px;
+  	cursor: pointer;
+  	margin: 10px 0;
+  	background-color: transparent;
+	color: #000;
+	width: 60%;
+	text-align: center;
+	font-size: 15px;
+	font-weight: bold;
+}
+.about-banner img{
+	width: 50%;
+	border-radius: 20px;
+	margin: 20px;
+}
+.line-2{
+	width: 2px;
+	height: 190px;
+	background: #262363;
+	display: inline-block;
+	position: absolute;
+	top: 130%;
+	right: 5%;
+}
+.counter-row{
+	height: 50vh;
+}
+.counter-col{
+	flex-basis: 100%;
+	text-align: center;
+	margin-left: 20px;
+	margin-bottom: 10px;
+	color: #fff;
+}
+.service-row{
+	width: 300px;
+	margin: 70px auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+.service-col{
+	flex-basis: 50%;
+	height: 230px;
+	transition: 1s;
+
+}
+.service-col img{
+	display: none;
+}
+#gallery{
+	padding: 200px 0;	
+}
+.blog-col{
+	flex-basis: 100%;
+	max-width: 500px;
+	text-align: center;
+	margin-right: 25%;
+}
+.blog-col img{
+	width: 100%;
+}
+.btn-container{
+	margin-left: 0px;
+}
+.gallery-btn{
+	padding: 10px;
+	margin: 20px;
+	border-radius: 30px;
+	border: none;
+	background: transparent;
+	font-size: 15px;
+	cursor: pointer;
+	text-decoration: none;
+	color: black;
+}
+#contact{
+	padding: 0;
+}
+.contactPage .square, .square2{
+	margin-left: 15px;
+	margin-top: 20px;
+}
+.contact-left-col, .contact-right-col{
+	flex-basis: 100%;
+}
+
+.contact-text {
+	max-width: 500px;
+	line-height: 30px;
+	display: inline-block;
+}
+form{
+	max-width: 350px;
+	margin: 30px 15px;
+}
+.contact-icons .fa{
+	margin: 10px;
+}
+#footer{
+	padding: 800px 0;
+
+}
+.footer-row{
+	background: #262363;
+	color: #fff;
+	width: 100%;
+	height: 15vh;
+	position: relative;
+	bottom: 0;
+}
+}
